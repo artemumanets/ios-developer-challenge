@@ -97,7 +97,6 @@ public class Service {
         Alamofire.upload(multipartFormData: { (multipartFormData) in
             request.body.forEach { multipartFormData.append("\($0.value)".data(using: String.Encoding.utf8)!, withName: $0.key) }
             request.data?.forEach { multipartFormData.append($0.data, withName: $0.name, fileName: $0.fileName, mimeType: $0.mimeType) }
-            print("teste")
         }, usingThreshold: UInt64.init(), to: requestUrl, method: request.endpoint.info.method.alamofireHttpMethod, headers: headers)
         { (result) in
             switch result {

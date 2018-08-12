@@ -18,12 +18,14 @@ enum UI {
             static let numberOfRows: Int = 4
             static let spaceBetweenItens: CGFloat = 10.0
             static let margin: CGFloat = 20.0
+            
+            static func imageSize(for height: CGFloat) -> CGSize { return CGSize(width: height * 560.0 / 820.0, height: height) }
         }
     }
     
     enum Components {
         
-        static let activityIndicatorStyle: NVActivityIndicatorType = .ballPulse
+        static let activityIndicatorStyle: NVActivityIndicatorType = .ballTrianglePath
     }
     
     enum Animation {

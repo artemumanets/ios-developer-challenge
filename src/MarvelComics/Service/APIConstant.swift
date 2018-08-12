@@ -10,8 +10,5 @@ import Foundation
 
 enum APIConstant {
     
-    enum Header {
-        static let authorization = "Authorization"
-        static let contentType = "Content-Type"
-    }
+    static var comicsPageSize: Int { return UI.Layout.ComicsList.numberOfRows * 6 }
 }

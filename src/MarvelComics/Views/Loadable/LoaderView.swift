@@ -16,7 +16,7 @@ class LoaderView: UIView {
     static func create(color: UIColor) -> LoaderView {
         
         let loader = LoaderView.fromNib()
-        loader.viewActivityHolder.color = UIColor.black // TODO: Change
+        loader.viewActivityHolder.color = Theme.Color.Primary.content
         loader.viewActivityHolder.type = UI.Components.activityIndicatorStyle
         loader.viewActivityHolder.startAnimating()
         return loader

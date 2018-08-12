@@ -14,12 +14,14 @@ extension Response {
         
         let offset: Int
         let count: Int
+        let limit: Int
         let total: Int
         let result: [P]
         
         init(data: [String : Any]) throws {
             self.offset = try data.value(forKey: "offset")
             self.count = try data.value(forKey: "count")
+            self.limit = try data.value(forKey: "limit")
             self.total = try data.value(forKey: "total")
             self.result = try APIUtils.array(from: data.optionalValue(forPath: "results") as [[String: Any]]?, transform: { try P(data: $0) })
         }

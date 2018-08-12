@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="mTO-cz-00e" customClass="CellLoader" customModule="Marvel_Comics" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="256" height="226"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                <rect key="frame" x="0.0" y="0.0" width="256" height="226"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aQ8-Ut-Dee" customClass="NVActivityIndicatorView" customModule="NVActivityIndicatorView">
+                        <rect key="frame" x="113" y="98" width="30" height="30"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="30" id="VYw-yI-uzh"/>
+                            <constraint firstAttribute="height" constant="30" id="ZY2-2H-bAV"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="aQ8-Ut-Dee" firstAttribute="centerX" secondItem="mTO-cz-00e" secondAttribute="centerX" id="As9-r4-OuD"/>
+                <constraint firstItem="aQ8-Ut-Dee" firstAttribute="centerY" secondItem="mTO-cz-00e" secondAttribute="centerY" id="l0I-LT-Wfj"/>
+            </constraints>
+            <size key="customSize" width="256" height="226"/>
+            <connections>
+                <outlet property="viewActivityHolder" destination="aQ8-Ut-Dee" id="TlN-sU-K8X"/>
+            </connections>
+            <point key="canvasLocation" x="-185" y="-97"/>
+        </collectionViewCell>
+    </objects>
+</document>

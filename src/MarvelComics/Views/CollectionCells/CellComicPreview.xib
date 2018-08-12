@@ -19,30 +19,19 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="RGY-HB-sj5">
-                        <rect key="frame" x="0.0" y="0.0" width="256" height="226"/>
-                        <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <rect key="frame" x="2" y="2" width="252" height="222"/>
                     </imageView>
-                    <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" animating="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="HYv-Q5-Ky9">
-                        <rect key="frame" x="118" y="103" width="20" height="20"/>
-                        <constraints>
-                            <constraint firstAttribute="height" constant="20" id="Or1-vq-o6U"/>
-                            <constraint firstAttribute="width" constant="20" id="psb-8s-0mK"/>
-                        </constraints>
-                    </activityIndicatorView>
                 </subviews>
             </view>
             <constraints>
-                <constraint firstAttribute="bottom" secondItem="RGY-HB-sj5" secondAttribute="bottom" id="Cxr-dK-5n5"/>
-                <constraint firstItem="RGY-HB-sj5" firstAttribute="top" secondItem="mTO-cz-00e" secondAttribute="top" id="RS4-oK-ej0"/>
-                <constraint firstAttribute="trailing" secondItem="RGY-HB-sj5" secondAttribute="trailing" id="SNf-Bs-Qgr"/>
-                <constraint firstItem="RGY-HB-sj5" firstAttribute="leading" secondItem="mTO-cz-00e" secondAttribute="leading" id="U0u-Xa-hqI"/>
-                <constraint firstItem="HYv-Q5-Ky9" firstAttribute="centerX" secondItem="RGY-HB-sj5" secondAttribute="centerX" id="Wth-PC-bYY"/>
-                <constraint firstItem="HYv-Q5-Ky9" firstAttribute="centerY" secondItem="RGY-HB-sj5" secondAttribute="centerY" id="vzQ-mJ-iV3"/>
+                <constraint firstItem="RGY-HB-sj5" firstAttribute="leading" secondItem="mTO-cz-00e" secondAttribute="leading" constant="2" id="1KN-XH-VWl"/>
+                <constraint firstItem="RGY-HB-sj5" firstAttribute="top" secondItem="mTO-cz-00e" secondAttribute="top" constant="2" id="ScV-yf-zig"/>
+                <constraint firstAttribute="trailing" secondItem="RGY-HB-sj5" secondAttribute="trailing" constant="2" id="XQD-k5-jch"/>
+                <constraint firstAttribute="bottom" secondItem="RGY-HB-sj5" secondAttribute="bottom" constant="2" id="hc9-FU-48A"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="WUN-Fv-waF"/>
             <size key="customSize" width="256" height="226"/>
             <connections>
-                <outlet property="activityLoader" destination="HYv-Q5-Ky9" id="R4x-PY-Fzl"/>
                 <outlet property="imageView" destination="RGY-HB-sj5" id="ULg-cB-wsh"/>
             </connections>
             <point key="canvasLocation" x="-185" y="-97"/>

@@ -1,0 +1,16 @@
+/* 
+  Localizable.strings
+  MarvelComics
+
+  Created by Artem Umanets on 12/08/2018.
+  Copyright © 2018 Seedrop. All rights reserved.
+*/
+
+/* Generic */
+"Generic.Reload" = "Reload";
+"Generic.Dismiss" = "Dismiss";
+
+/* Errors */
+"Error.Generic" = "Unexpected error ocurred, please try again.";
+"Error.LoadingCover" = "An error occured loading cover, please try again.";
+"Error.NoInternetConnection" = "You don't have Internet connection, please try again.";

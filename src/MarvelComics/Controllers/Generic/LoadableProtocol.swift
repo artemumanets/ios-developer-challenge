@@ -12,7 +12,6 @@ enum ViewControllerState {
     case loading
     case error
     case content
-    case noContent
 }
 
 protocol LoadableProtocol: class {
@@ -20,7 +19,6 @@ protocol LoadableProtocol: class {
     var viewMain: UIView { get set }
 
     var viewContent: UIView { get set }
-    var viewNoContent: NoContentView? { get set }
     var viewLoader: LoaderView { get set }
     var viewError: RetryView { get set }
     
@@ -41,20 +39,11 @@ extension LoadableProtocol where Self: UIViewController {
         self.view.addSubview(self.viewMain)
         self.viewMain.snp.makeConstraints { $0.leading.trailing.top.bottom.equalToSuperview() }
         
-        if let viewNoContent = self.viewNoContent {
-            self.viewMain.addSubview(viewNoContent)
-
-            viewNoContent.snp.makeConstraints {
-                $0.top.equalTo(self.view.safeAreaLayoutGuide.snp.topMargin)
-                $0.leading.trailing.bottom.equalToSuperview()
-            }
-            viewNoContent.snp.makeConstraints { $0.leading.trailing.bottom.top.equalToSuperview() }
-        }
-        
         self.viewMain.addSubview(self.viewContent)
         self.viewContent.snp.makeConstraints {
             $0.top.equalTo(self.view.safeAreaLayoutGuide.snp.topMargin)
-            $0.leading.trailing.bottom.equalToSuperview()
+            $0.bottom.equalTo(self.view.safeAreaLayoutGuide.snp.bottomMargin)
+            $0.leading.trailing.equalToSuperview()
         }
         
         self.viewMain.addSubview(self.viewLoader)
@@ -74,22 +63,14 @@ extension LoadableProtocol where Self: UIViewController {
                 self.viewContent.alpha = 0.0
                 self.viewLoader.alpha = 1.0
                 self.viewError.alpha = 0.0
-                self.viewNoContent?.alpha = 0.0
             } else if self.state == .error {
                 self.viewContent.alpha = 0.0
                 self.viewLoader.alpha = 0.0
                 self.viewError.alpha = 1.0
-                self.viewNoContent?.alpha = 0.0
             } else if self.state == .content {
                 self.viewContent.alpha = 1.0
                 self.viewLoader.alpha = 0.0
                 self.viewError.alpha = 0.0
-                self.viewNoContent?.alpha = 0.0
-            } else if self.state == .noContent {
-                self.viewContent.alpha = 0.0
-                self.viewLoader.alpha = 0.0
-                self.viewError.alpha = 0.0
-                self.viewNoContent?.alpha = 1.0
             }
         }
         

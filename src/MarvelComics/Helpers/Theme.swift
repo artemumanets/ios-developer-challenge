@@ -17,13 +17,18 @@ struct Theme {
         
         enum Primary {
             
-            static let background = UIColor(hex: 0x1E5190)
+            static let background = UIColor(hex: 0xFFFFFF)
             static let content = UIColor(hex: 0xFFFFFF)
             static let subContent = UIColor(hex: 0xFFFFFF).withAlphaComponent(0.5)
             
-            static let accent = UIColor(hex: 0x5F83AF)
+            static let accent = UIColor(hex: 0xe8212d)
             
             static let error = UIColor(hex: 0xE02A2A)
+        }
+        
+        enum Error {
+            static let background = UIColor(hex: 0x000000)
+            static let content = UIColor(hex: 0xffffff)
         }
     }
     

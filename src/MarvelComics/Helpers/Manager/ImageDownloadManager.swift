@@ -19,6 +19,14 @@ class ImageDownloadManager {
     
     static var shared: ImageDownloadManager = { return ImageDownloadManager() }()
     
+    func cachedImage(url: URL) -> UIImage? {
+        return self.imageCache[url.absoluteString]
+    }
+    
+    func clear() {
+        self.imageCache.removeAll()
+    }
+    
     func loadImage(from url: URL, onSuccess: @escaping ImageDownloadOnImageSuccess, onError: @escaping ImageDownloadOnImageError, onFinally: @escaping ImageDownloadOnFinally = {}) {
         
         if let image = self.imageCache[url.absoluteString] {

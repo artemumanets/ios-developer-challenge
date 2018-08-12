@@ -24,9 +24,13 @@ class RetryView: UIView {
     
     override func awakeFromNib() {
         super.awakeFromNib()
+
+        self.backgroundColor = Theme.Color.Error.background
         
-        self.labelErrorMessage.set(color: Theme.Color.Primary.content, font: Theme.Font.h3.medium)
-//        self.buttonRetry.configure(as: .lightContentPrimary, title: "Global.Reload".localized)
+        self.labelErrorMessage.set(color: Theme.Color.Error.content, font: Theme.Font.h3.medium)
+        self.buttonRetry.tintColor = Theme.Color.Error.content
+        self.buttonRetry.setBackground(color: Theme.Color.Error.content.withAlphaComponent(0.15), for: .normal)
+        self.buttonRetry.setTitle(l("Generic.Reload"), for: .normal)
     }
 }
 
