@@ -30,7 +30,7 @@ extension Request {
             
             init(pageSize: Int, offset: Int) {
                 self.pageSize = pageSize
-                self.offset = offset
+                self.offset = offset + 200
                 
                 self.publicKey = Configuration.API.publicKey
                 self.privateKey = Configuration.API.privateKey

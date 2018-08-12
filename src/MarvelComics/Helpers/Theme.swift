@@ -19,11 +19,6 @@ struct Theme {
             
             static let background = UIColor(hex: 0xFFFFFF)
             static let content = UIColor(hex: 0xFFFFFF)
-            static let subContent = UIColor(hex: 0xFFFFFF).withAlphaComponent(0.5)
-            
-            static let accent = UIColor(hex: 0xe8212d)
-            
-            static let error = UIColor(hex: 0xE02A2A)
         }
         
         enum Error {
@@ -34,12 +29,7 @@ struct Theme {
     
     enum Font {
         
-        struct h3: ThemeFont { static var size: CGFloat = 15.0 }
-        struct h4: ThemeFont { static var size: CGFloat = 14.0 }
-        struct h5: ThemeFont { static var size: CGFloat = 13.0 }
-        struct h6: ThemeFont { static var size: CGFloat = 12.0 }
-        struct h7: ThemeFont { static var size: CGFloat = 11.0 }
-        struct h8: ThemeFont { static var size: CGFloat = 10.0 }
+        struct content: ThemeFont { static var size: CGFloat = 15.0 }
     }
 }
 

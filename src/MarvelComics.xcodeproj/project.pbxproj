@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		4F07A3A521204866000A38E9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F07A3A421204866000A38E9 /* AppDelegate.swift */; };
 		4F07A3A721204866000A38E9 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F07A3A621204866000A38E9 /* MainViewController.swift */; };
-		4F07A3AA21204866000A38E9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4F07A3A821204866000A38E9 /* Main.storyboard */; };
 		4F07A3AC21204867000A38E9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4F07A3AB21204867000A38E9 /* Assets.xcassets */; };
 		4F07A3AF21204867000A38E9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4F07A3AD21204867000A38E9 /* LaunchScreen.storyboard */; };
 		4FE6952821204E0B004EE7A4 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FE6951D21204E0B004EE7A4 /* Service.swift */; };
@@ -71,7 +70,6 @@
 		4F07A3A121204866000A38E9 /* Comics.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Comics.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4F07A3A421204866000A38E9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4F07A3A621204866000A38E9 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
-		4F07A3A921204866000A38E9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4F07A3AB21204867000A38E9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4F07A3AE21204867000A38E9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4F07A3B021204867000A38E9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -172,8 +170,6 @@
 				4FE6953621204E48004EE7A4 /* Controllers */,
 				4FE6953321204E2A004EE7A4 /* Helpers */,
 				4F07A3B621204B50000A38E9 /* Resources */,
-				4F07A3A821204866000A38E9 /* Main.storyboard */,
-				4F07A3AD21204867000A38E9 /* LaunchScreen.storyboard */,
 			);
 			path = MarvelComics;
 			sourceTree = "<group>";
@@ -185,6 +181,7 @@
 				4F07A3AB21204867000A38E9 /* Assets.xcassets */,
 				4F07A3B021204867000A38E9 /* Info.plist */,
 				4FE695A32120BFE5004EE7A4 /* Localizable.strings */,
+				4F07A3AD21204867000A38E9 /* LaunchScreen.storyboard */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -444,7 +441,6 @@
 				4FE69590212095CD004EE7A4 /* CellComicPreview.xib in Resources */,
 				4F07A3AF21204867000A38E9 /* LaunchScreen.storyboard in Resources */,
 				4F07A3AC21204867000A38E9 /* Assets.xcassets in Resources */,
-				4F07A3AA21204866000A38E9 /* Main.storyboard in Resources */,
 				4FE695A12120BFE5004EE7A4 /* Localizable.strings in Resources */,
 				4FE6959D2120AC42004EE7A4 /* CellLoader.xib in Resources */,
 				4FE6955721205739004EE7A4 /* RetryView.xib in Resources */,
@@ -558,14 +554,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		4F07A3A821204866000A38E9 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				4F07A3A921204866000A38E9 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		4F07A3AD21204867000A38E9 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
