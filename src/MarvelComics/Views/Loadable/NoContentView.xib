@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" verticalHuggingPriority="750" id="UYa-eN-ldK" customClass="NoContentView" customModule="Drywall" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="555"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vst-Lq-bcz">
+                    <rect key="frame" x="20" y="257.5" width="335" height="40.5"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lGs-8A-H6A">
+                            <rect key="frame" x="10" y="10" width="315" height="20.5"/>
+                            <constraints>
+                                <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="20" id="oCh-jm-woY"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="lGs-8A-H6A" firstAttribute="leading" secondItem="vst-Lq-bcz" secondAttribute="leading" constant="10" id="40e-Z4-qn3"/>
+                        <constraint firstAttribute="trailing" secondItem="lGs-8A-H6A" secondAttribute="trailing" constant="10" id="72A-o9-4Kl"/>
+                        <constraint firstAttribute="bottom" secondItem="lGs-8A-H6A" secondAttribute="bottom" constant="10" id="CHr-q7-MvV"/>
+                        <constraint firstItem="lGs-8A-H6A" firstAttribute="top" secondItem="vst-Lq-bcz" secondAttribute="top" constant="10" id="u7M-hX-4Mk"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="vst-Lq-bcz" secondAttribute="trailing" constant="20" id="cO6-7w-MGB"/>
+                <constraint firstItem="vst-Lq-bcz" firstAttribute="leading" secondItem="UYa-eN-ldK" secondAttribute="leading" constant="20" id="f9e-mi-kIF"/>
+                <constraint firstItem="vst-Lq-bcz" firstAttribute="centerX" secondItem="UYa-eN-ldK" secondAttribute="centerX" id="jPa-2f-Tdj"/>
+                <constraint firstItem="vst-Lq-bcz" firstAttribute="centerY" secondItem="UYa-eN-ldK" secondAttribute="centerY" id="lHh-8e-uod"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="labelMessage" destination="lGs-8A-H6A" id="1Wi-5q-Vxp"/>
+            </connections>
+            <point key="canvasLocation" x="-97.5" y="109.5"/>
+        </view>
+    </objects>
+</document>

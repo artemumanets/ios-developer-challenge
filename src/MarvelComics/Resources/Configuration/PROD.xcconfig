@@ -7,3 +7,7 @@
 //
 
 #include "Pods/Target Support Files/Pods-MarvelComics/Pods-MarvelComics.prod.xcconfig"
+
+SLASH=/
+environment = prod
+apiURL = https:$(SLASH)$(SLASH)gateway.marvel.com
