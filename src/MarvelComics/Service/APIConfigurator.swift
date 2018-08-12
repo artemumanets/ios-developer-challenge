@@ -19,6 +19,6 @@ public class APIConfigurator: ServiceConfigurator {
         return [:]
     }
     
-    public var requestEncoding: ServiceRequestEncodingType { return .json }
+    public var requestEncoding: ServiceRequestEncodingType { return .url }
 
 }

@@ -14,7 +14,7 @@ enum APIEndpoint: ServiceEndpoint {
 
     var info: EndpointInfo {
         switch self {
-        case .listComics: return (.get, "v1/public/comic")
+        case .listComics: return (.get, "v1/public/comics")
         }
     }
 }

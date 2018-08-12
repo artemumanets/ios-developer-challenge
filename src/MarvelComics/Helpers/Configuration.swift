@@ -33,14 +33,15 @@ public final class Configuration {
     
     enum App {
         
-        static var environment: Environment = { return Environment(rawValue: Configuration.stringFor(key: ConfigurationKey.environment))! }()
+        static var environment: Environment = { return Environment(rawValue: Configuration.stringFor(key: "Environment"))! }()
         static var logging = [LoggingFeature]()
     }
     
     enum API {
         
-        static var url: URL = { return Configuration.urlFor(key: ConfigurationKey.apiUrl) }()
-        static var publicKey: URL = { return Configuration.urlFor(key: ConfigurationKey.publicKey) }()
+        static var url: URL = { return Configuration.urlFor(key: "APIURL") }()
+        static var publicKey: String = { return Configuration.stringFor(key: "APIPublicKey") }()
+        static var privateKey: String = { return Configuration.stringFor(key: "APIPrivateKey") }()
     }
 }
 
@@ -57,12 +58,3 @@ enum LoggingFeature {
     case local
 }
 
-fileprivate enum ConfigurationKey {
-    
-    static let confgBaseName = "MarvelComics"
-    
-    static let environment = "Environment"
-    
-    static let apiUrl = "APIURL"
-    static let publicKey = "PublicKey"
-}

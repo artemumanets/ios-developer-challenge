@@ -11,4 +11,9 @@ target 'MarvelComics' do
   #UI
   pod 'SnapKit', '4.0.0'
   pod 'NVActivityIndicatorView', '4.1.1', :inhibit_warnings => true
+  
+  #Security
+  pod 'SwiftHash', '2.0.1'
+
+  
 end

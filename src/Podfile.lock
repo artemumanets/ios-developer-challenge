@@ -4,23 +4,27 @@ PODS:
     - NVActivityIndicatorView/Presenter (= 4.1.1)
   - NVActivityIndicatorView/Presenter (4.1.1)
   - SnapKit (4.0.0)
+  - SwiftHash (2.0.1)
 
 DEPENDENCIES:
   - Alamofire (= 4.6.0)
   - NVActivityIndicatorView (= 4.1.1)
   - SnapKit (= 4.0.0)
+  - SwiftHash (= 2.0.1)
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - Alamofire
     - NVActivityIndicatorView
     - SnapKit
+    - SwiftHash
 
 SPEC CHECKSUMS:
   Alamofire: f41a599bd63041760b26d393ec1069d9d7b917f4
   NVActivityIndicatorView: 60109b9bf46efc2e71ab81453196ccdfdfeea870
   SnapKit: a42d492c16e80209130a3379f73596c3454b7694
+  SwiftHash: c805de5a434eacfa0dac7210745a50c55d7fe33d
 
-PODFILE CHECKSUM: 45db74ef263ed09fee2ee95f836812a32daa338f
+PODFILE CHECKSUM: 868b26bd6302992b5cc08e26a76cceb2730b1c4b
 
 COCOAPODS: 1.5.3

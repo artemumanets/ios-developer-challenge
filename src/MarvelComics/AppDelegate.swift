@@ -15,7 +15,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         
-        InitializationManger.initialize(components: [.logging([.local])], launchOptions: launchOptions)
+        InitializationManger.initialize(components: [.service, .logging([.local])], launchOptions: launchOptions)
+        
+        self.window = UIWindow(frame: UIScreen.main.bounds)
+        self.window?.rootViewController = MainViewController()
+        self.window?.makeKeyAndVisible()
+        
         return true
     }
 }

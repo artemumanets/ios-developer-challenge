@@ -20,7 +20,8 @@ struct Theme {
             static let background = UIColor(hex: 0x1E5190)
             static let content = UIColor(hex: 0xFFFFFF)
             static let subContent = UIColor(hex: 0xFFFFFF).withAlphaComponent(0.5)
-            static let separator = UIColor(hex: 0x5F83AF)
+            
+            static let accent = UIColor(hex: 0x5F83AF)
             
             static let error = UIColor(hex: 0xE02A2A)
         }
@@ -50,7 +51,7 @@ extension ThemeFont {
 
 fileprivate extension UIFont {
     
-    class func regular(ofSize size: CGFloat) -> UIFont { return UIFont(name: "GothamBook", size: size)! }
-    class func medium(ofSize size: CGFloat) -> UIFont { return UIFont(name: "GothamMedium", size: size)! }
-    class func bold(ofSize size: CGFloat) -> UIFont { return UIFont(name: "Gotham-Bold", size: size)! }
+    class func regular(ofSize size: CGFloat) -> UIFont { return UIFont(name: "Avenir-Book", size: size)! }
+    class func medium(ofSize size: CGFloat) -> UIFont { return UIFont(name: "Avenir-Medium", size: size)! }
+    class func bold(ofSize size: CGFloat) -> UIFont { return UIFont(name: "Avenir-Black", size: size)! }
 }
