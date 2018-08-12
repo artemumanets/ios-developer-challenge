@@ -63,3 +63,4 @@ fastlane/report.xml
 fastlane/screenshots
 contents.xcworkspacedata
 IDEWorkspaceChecks.plist
+src/Pods

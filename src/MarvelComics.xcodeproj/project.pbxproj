@@ -12,6 +12,19 @@
 		4F07A3AA21204866000A38E9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4F07A3A821204866000A38E9 /* Main.storyboard */; };
 		4F07A3AC21204867000A38E9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4F07A3AB21204867000A38E9 /* Assets.xcassets */; };
 		4F07A3AF21204867000A38E9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4F07A3AD21204867000A38E9 /* LaunchScreen.storyboard */; };
+		4FE6952821204E0B004EE7A4 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FE6951D21204E0B004EE7A4 /* Service.swift */; };
+		4FE6952921204E0B004EE7A4 /* ServiceRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FE6951E21204E0B004EE7A4 /* ServiceRequest.swift */; };
+		4FE6952A21204E0B004EE7A4 /* ServiceConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FE6951F21204E0B004EE7A4 /* ServiceConfigurator.swift */; };
+		4FE6952B21204E0B004EE7A4 /* ServiceDataMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FE6952021204E0B004EE7A4 /* ServiceDataMapper.swift */; };
+		4FE6952C21204E0B004EE7A4 /* Service+Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FE6952121204E0B004EE7A4 /* Service+Alamofire.swift */; };
+		4FE6952D21204E0B004EE7A4 /* ServiceError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FE6952221204E0B004EE7A4 /* ServiceError.swift */; };
+		4FE6952E21204E0B004EE7A4 /* ServiceRequestObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FE6952321204E0B004EE7A4 /* ServiceRequestObject.swift */; };
+		4FE6952F21204E0B004EE7A4 /* ServiceResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FE6952421204E0B004EE7A4 /* ServiceResponse.swift */; };
+		4FE6953021204E0B004EE7A4 /* ServiceEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FE6952521204E0B004EE7A4 /* ServiceEndpoint.swift */; };
+		4FE6953121204E0B004EE7A4 /* Dicionary+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FE6952621204E0B004EE7A4 /* Dicionary+Extensions.swift */; };
+		4FE6953221204E0B004EE7A4 /* ServiceErrorManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FE6952721204E0B004EE7A4 /* ServiceErrorManager.swift */; };
+		4FE6953521204E37004EE7A4 /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FE6953421204E37004EE7A4 /* String+Extensions.swift */; };
+		E6524219B5EF92562A3509F1 /* Pods_MarvelComics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 749F87922E3620F4C9CE9136 /* Pods_MarvelComics.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +37,19 @@
 		4F07A3B021204867000A38E9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4F07A3B821204B7D000A38E9 /* DEV.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = DEV.xcconfig; sourceTree = "<group>"; };
 		4F07A3B921204B87000A38E9 /* PROD.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = PROD.xcconfig; sourceTree = "<group>"; };
+		4FE6951D21204E0B004EE7A4 /* Service.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
+		4FE6951E21204E0B004EE7A4 /* ServiceRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceRequest.swift; sourceTree = "<group>"; };
+		4FE6951F21204E0B004EE7A4 /* ServiceConfigurator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceConfigurator.swift; sourceTree = "<group>"; };
+		4FE6952021204E0B004EE7A4 /* ServiceDataMapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceDataMapper.swift; sourceTree = "<group>"; };
+		4FE6952121204E0B004EE7A4 /* Service+Alamofire.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Service+Alamofire.swift"; sourceTree = "<group>"; };
+		4FE6952221204E0B004EE7A4 /* ServiceError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceError.swift; sourceTree = "<group>"; };
+		4FE6952321204E0B004EE7A4 /* ServiceRequestObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceRequestObject.swift; sourceTree = "<group>"; };
+		4FE6952421204E0B004EE7A4 /* ServiceResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceResponse.swift; sourceTree = "<group>"; };
+		4FE6952521204E0B004EE7A4 /* ServiceEndpoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceEndpoint.swift; sourceTree = "<group>"; };
+		4FE6952621204E0B004EE7A4 /* Dicionary+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Dicionary+Extensions.swift"; sourceTree = "<group>"; };
+		4FE6952721204E0B004EE7A4 /* ServiceErrorManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceErrorManager.swift; sourceTree = "<group>"; };
+		4FE6953421204E37004EE7A4 /* String+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
+		749F87922E3620F4C9CE9136 /* Pods_MarvelComics.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MarvelComics.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +57,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E6524219B5EF92562A3509F1 /* Pods_MarvelComics.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +69,8 @@
 			children = (
 				4F07A3A321204866000A38E9 /* MarvelComics */,
 				4F07A3A221204866000A38E9 /* Products */,
+				84C969255C487E66F3037A3F /* Pods */,
+				6EA8E7E66B06BDBDB63451BB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -57,7 +86,11 @@
 			isa = PBXGroup;
 			children = (
 				4F07A3A421204866000A38E9 /* AppDelegate.swift */,
-				4F07A3A621204866000A38E9 /* ViewController.swift */,
+				4FE6953B21204EB5004EE7A4 /* Service */,
+				4FE6953921204E70004EE7A4 /* Models */,
+				4FE6953821204E5F004EE7A4 /* Views */,
+				4FE6953621204E48004EE7A4 /* Controllers */,
+				4FE6953321204E2A004EE7A4 /* Helpers */,
 				4F07A3B621204B50000A38E9 /* Resources */,
 				4F07A3A821204866000A38E9 /* Main.storyboard */,
 				4F07A3AD21204867000A38E9 /* LaunchScreen.storyboard */,
@@ -84,6 +117,85 @@
 			path = Configuration;
 			sourceTree = "<group>";
 		};
+		4FE6951C21204E0B004EE7A4 /* ServiceLayer */ = {
+			isa = PBXGroup;
+			children = (
+				4FE6951D21204E0B004EE7A4 /* Service.swift */,
+				4FE6951E21204E0B004EE7A4 /* ServiceRequest.swift */,
+				4FE6951F21204E0B004EE7A4 /* ServiceConfigurator.swift */,
+				4FE6952021204E0B004EE7A4 /* ServiceDataMapper.swift */,
+				4FE6952121204E0B004EE7A4 /* Service+Alamofire.swift */,
+				4FE6952221204E0B004EE7A4 /* ServiceError.swift */,
+				4FE6952321204E0B004EE7A4 /* ServiceRequestObject.swift */,
+				4FE6952421204E0B004EE7A4 /* ServiceResponse.swift */,
+				4FE6952521204E0B004EE7A4 /* ServiceEndpoint.swift */,
+				4FE6952621204E0B004EE7A4 /* Dicionary+Extensions.swift */,
+				4FE6952721204E0B004EE7A4 /* ServiceErrorManager.swift */,
+			);
+			path = ServiceLayer;
+			sourceTree = "<group>";
+		};
+		4FE6953321204E2A004EE7A4 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				4FE6951C21204E0B004EE7A4 /* ServiceLayer */,
+				4FE6953A21204E9A004EE7A4 /* Extensions */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		4FE6953621204E48004EE7A4 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				4F07A3A621204866000A38E9 /* ViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		4FE6953821204E5F004EE7A4 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		4FE6953921204E70004EE7A4 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		4FE6953A21204E9A004EE7A4 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				4FE6953421204E37004EE7A4 /* String+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		4FE6953B21204EB5004EE7A4 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		6EA8E7E66B06BDBDB63451BB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				749F87922E3620F4C9CE9136 /* Pods_MarvelComics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		84C969255C487E66F3037A3F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -91,9 +203,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4F07A3B321204867000A38E9 /* Build configuration list for PBXNativeTarget "MarvelComics" */;
 			buildPhases = (
+				65526D05D9395977C9FD971A /* [CP] Check Pods Manifest.lock */,
 				4F07A39D21204866000A38E9 /* Sources */,
 				4F07A39E21204866000A38E9 /* Frameworks */,
 				4F07A39F21204866000A38E9 /* Resources */,
+				C0620FB08661A9E49891E0D4 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -150,13 +264,68 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		65526D05D9395977C9FD971A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MarvelComics-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C0620FB08661A9E49891E0D4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-MarvelComics/Pods-MarvelComics-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/NVActivityIndicatorView/NVActivityIndicatorView.framework",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NVActivityIndicatorView.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MarvelComics/Pods-MarvelComics-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		4F07A39D21204866000A38E9 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4FE6952D21204E0B004EE7A4 /* ServiceError.swift in Sources */,
+				4FE6953221204E0B004EE7A4 /* ServiceErrorManager.swift in Sources */,
+				4FE6952B21204E0B004EE7A4 /* ServiceDataMapper.swift in Sources */,
+				4FE6953121204E0B004EE7A4 /* Dicionary+Extensions.swift in Sources */,
+				4FE6952A21204E0B004EE7A4 /* ServiceConfigurator.swift in Sources */,
 				4F07A3A721204866000A38E9 /* ViewController.swift in Sources */,
+				4FE6953021204E0B004EE7A4 /* ServiceEndpoint.swift in Sources */,
+				4FE6952921204E0B004EE7A4 /* ServiceRequest.swift in Sources */,
+				4FE6953521204E37004EE7A4 /* String+Extensions.swift in Sources */,
 				4F07A3A521204866000A38E9 /* AppDelegate.swift in Sources */,
+				4FE6952C21204E0B004EE7A4 /* Service+Alamofire.swift in Sources */,
+				4FE6952821204E0B004EE7A4 /* Service.swift in Sources */,
+				4FE6952F21204E0B004EE7A4 /* ServiceResponse.swift in Sources */,
+				4FE6952E21204E0B004EE7A4 /* ServiceRequestObject.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
