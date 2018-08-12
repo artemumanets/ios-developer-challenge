@@ -53,6 +53,13 @@
 		4FE6958421207E2E004EE7A4 /* Request+Comics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FE6958321207E2D004EE7A4 /* Request+Comics.swift */; };
 		4FE695862120855B004EE7A4 /* Response+Comics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FE695852120855B004EE7A4 /* Response+Comics.swift */; };
 		4FE6958821208F8E004EE7A4 /* Response+Paginated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FE6958721208F8E004EE7A4 /* Response+Paginated.swift */; };
+		4FE6958B21209440004EE7A4 /* Animations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FE6958A2120943F004EE7A4 /* Animations.swift */; };
+		4FE6958E2120959A004EE7A4 /* CellComicPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FE6958D2120959A004EE7A4 /* CellComicPreview.swift */; };
+		4FE69590212095CD004EE7A4 /* CellComicPreview.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4FE6958F212095CD004EE7A4 /* CellComicPreview.xib */; };
+		4FE6959221209774004EE7A4 /* UICollectionView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FE6959121209774004EE7A4 /* UICollectionView+Extension.swift */; };
+		4FE6959421209790004EE7A4 /* ReusabelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FE6959321209790004EE7A4 /* ReusabelView.swift */; };
+		4FE695962120982E004EE7A4 /* ModelPresenterCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FE695952120982E004EE7A4 /* ModelPresenterCell.swift */; };
+		4FE695982120A077004EE7A4 /* ImageDownloadManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FE695972120A077004EE7A4 /* ImageDownloadManager.swift */; };
 		E6524219B5EF92562A3509F1 /* Pods_MarvelComics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 749F87922E3620F4C9CE9136 /* Pods_MarvelComics.framework */; };
 /* End PBXBuildFile section */
 
@@ -107,6 +114,13 @@
 		4FE6958321207E2D004EE7A4 /* Request+Comics.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Request+Comics.swift"; sourceTree = "<group>"; };
 		4FE695852120855B004EE7A4 /* Response+Comics.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Response+Comics.swift"; sourceTree = "<group>"; };
 		4FE6958721208F8E004EE7A4 /* Response+Paginated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Response+Paginated.swift"; sourceTree = "<group>"; };
+		4FE6958A2120943F004EE7A4 /* Animations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Animations.swift; sourceTree = "<group>"; };
+		4FE6958D2120959A004EE7A4 /* CellComicPreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellComicPreview.swift; sourceTree = "<group>"; };
+		4FE6958F212095CD004EE7A4 /* CellComicPreview.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CellComicPreview.xib; sourceTree = "<group>"; };
+		4FE6959121209774004EE7A4 /* UICollectionView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UICollectionView+Extension.swift"; sourceTree = "<group>"; };
+		4FE6959321209790004EE7A4 /* ReusabelView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReusabelView.swift; sourceTree = "<group>"; };
+		4FE695952120982E004EE7A4 /* ModelPresenterCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModelPresenterCell.swift; sourceTree = "<group>"; };
+		4FE695972120A077004EE7A4 /* ImageDownloadManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageDownloadManager.swift; sourceTree = "<group>"; };
 		749F87922E3620F4C9CE9136 /* Pods_MarvelComics.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MarvelComics.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -201,6 +215,7 @@
 				4FE6957C21205A70004EE7A4 /* Configuration.swift */,
 				4FE695632120588B004EE7A4 /* Theme.swift */,
 				4FE6957E21205A89004EE7A4 /* Logger.swift */,
+				4FE695892120943F004EE7A4 /* Utils */,
 				4FE6958021205B1A004EE7A4 /* Manager */,
 				4FE6951C21204E0B004EE7A4 /* ServiceLayer */,
 				4FE6953A21204E9A004EE7A4 /* Extensions */,
@@ -220,6 +235,7 @@
 		4FE6953821204E5F004EE7A4 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				4FE6958C21209585004EE7A4 /* CollectionCells */,
 				4FE6955A2120573B004EE7A4 /* Loadable */,
 			);
 			path = Views;
@@ -235,10 +251,13 @@
 		4FE6953A21204E9A004EE7A4 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				4FE6959321209790004EE7A4 /* ReusabelView.swift */,
+				4FE695952120982E004EE7A4 /* ModelPresenterCell.swift */,
 				4FE6953421204E37004EE7A4 /* String+Extensions.swift */,
 				4FE6955B2120575F004EE7A4 /* UIView+Extensions.swift */,
 				4FE6956121205876004EE7A4 /* UILabel+Extensions.swift */,
 				4FE69565212058EA004EE7A4 /* UIColor+Extensions.swift */,
+				4FE6959121209774004EE7A4 /* UICollectionView+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -312,8 +331,26 @@
 			isa = PBXGroup;
 			children = (
 				4FE6958121205B22004EE7A4 /* InitializationManager.swift */,
+				4FE695972120A077004EE7A4 /* ImageDownloadManager.swift */,
 			);
 			path = Manager;
+			sourceTree = "<group>";
+		};
+		4FE695892120943F004EE7A4 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				4FE6958A2120943F004EE7A4 /* Animations.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		4FE6958C21209585004EE7A4 /* CollectionCells */ = {
+			isa = PBXGroup;
+			children = (
+				4FE6958D2120959A004EE7A4 /* CellComicPreview.swift */,
+				4FE6958F212095CD004EE7A4 /* CellComicPreview.xib */,
+			);
+			path = CollectionCells;
 			sourceTree = "<group>";
 		};
 		6EA8E7E66B06BDBDB63451BB /* Frameworks */ = {
@@ -392,6 +429,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4FE6955821205739004EE7A4 /* LoaderView.xib in Resources */,
+				4FE69590212095CD004EE7A4 /* CellComicPreview.xib in Resources */,
 				4F07A3AF21204867000A38E9 /* LaunchScreen.storyboard in Resources */,
 				4F07A3AC21204867000A38E9 /* Assets.xcassets in Resources */,
 				4FE6955921205739004EE7A4 /* NoContentView.xib in Resources */,
@@ -466,11 +504,14 @@
 				4FE6954B212056DB004EE7A4 /* LoadableProtocol.swift in Sources */,
 				4FE6953121204E0B004EE7A4 /* Dicionary+Extensions.swift in Sources */,
 				4FE6952A21204E0B004EE7A4 /* ServiceConfigurator.swift in Sources */,
+				4FE6958B21209440004EE7A4 /* Animations.swift in Sources */,
 				4FE695642120588B004EE7A4 /* Theme.swift in Sources */,
 				4FE6954D212056E9004EE7A4 /* LoadableController.swift in Sources */,
 				4FE69566212058EA004EE7A4 /* UIColor+Extensions.swift in Sources */,
 				4F07A3A721204866000A38E9 /* MainViewController.swift in Sources */,
+				4FE695962120982E004EE7A4 /* ModelPresenterCell.swift in Sources */,
 				4FE6957D21205A70004EE7A4 /* Configuration.swift in Sources */,
+				4FE6958E2120959A004EE7A4 /* CellComicPreview.swift in Sources */,
 				4FE6953021204E0B004EE7A4 /* ServiceEndpoint.swift in Sources */,
 				4FE6952921204E0B004EE7A4 /* ServiceRequest.swift in Sources */,
 				4FE6953521204E37004EE7A4 /* String+Extensions.swift in Sources */,
@@ -481,15 +522,18 @@
 				4FE6952C21204E0B004EE7A4 /* Service+Alamofire.swift in Sources */,
 				4FE6956021205805004EE7A4 /* Config.swift in Sources */,
 				4FE6956F212059C0004EE7A4 /* APIConstant.swift in Sources */,
+				4FE6959421209790004EE7A4 /* ReusabelView.swift in Sources */,
 				4FE69573212059C0004EE7A4 /* APIUtils.swift in Sources */,
 				4FE6955621205739004EE7A4 /* RetryView.swift in Sources */,
 				4FE6952821204E0B004EE7A4 /* Service.swift in Sources */,
 				4FE6955421205739004EE7A4 /* LoaderView.swift in Sources */,
 				4FE695862120855B004EE7A4 /* Response+Comics.swift in Sources */,
 				4FE69572212059C0004EE7A4 /* APIDataMapper.swift in Sources */,
+				4FE695982120A077004EE7A4 /* ImageDownloadManager.swift in Sources */,
 				4FE6957F21205A89004EE7A4 /* Logger.swift in Sources */,
 				4FE6952F21204E0B004EE7A4 /* ServiceResponse.swift in Sources */,
 				4FE69570212059C0004EE7A4 /* APIConfigurator.swift in Sources */,
+				4FE6959221209774004EE7A4 /* UICollectionView+Extension.swift in Sources */,
 				4FE6952E21204E0B004EE7A4 /* ServiceRequestObject.swift in Sources */,
 				4FE6955E212057DF004EE7A4 /* Global.swift in Sources */,
 			);

@@ -43,11 +43,19 @@ extension LoadableProtocol where Self: UIViewController {
         
         if let viewNoContent = self.viewNoContent {
             self.viewMain.addSubview(viewNoContent)
+
+            viewNoContent.snp.makeConstraints {
+                $0.top.equalTo(self.view.safeAreaLayoutGuide.snp.topMargin)
+                $0.leading.trailing.bottom.equalToSuperview()
+            }
             viewNoContent.snp.makeConstraints { $0.leading.trailing.bottom.top.equalToSuperview() }
         }
         
         self.viewMain.addSubview(self.viewContent)
-        self.viewContent.snp.makeConstraints { $0.leading.trailing.bottom.top.equalToSuperview() }
+        self.viewContent.snp.makeConstraints {
+            $0.top.equalTo(self.view.safeAreaLayoutGuide.snp.topMargin)
+            $0.leading.trailing.bottom.equalToSuperview()
+        }
         
         self.viewMain.addSubview(self.viewLoader)
         self.viewLoader.snp.makeConstraints { $0.leading.trailing.bottom.top.equalToSuperview() }
@@ -85,6 +93,6 @@ extension LoadableProtocol where Self: UIViewController {
             }
         }
         
-//        ActionAnimation(duration: UI.Animation.normal, options: .curveEaseInOut, animation: transition).start(animated: animated)
+        ActionAnimation(duration: UI.Animation.normal, options: .curveEaseInOut, animation: transition).start(animated: animated)
     }
 }

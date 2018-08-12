@@ -13,7 +13,7 @@ class LoadableDynamicViewController: UIViewController, LoadableProtocol {
    
     var viewMain = UIView(frame: .zero)
     var viewContent = UIView(frame: .zero)
-    var viewLoader: LoaderView = .create(color: UIColor.white) // TODO: Change
+    var viewLoader: LoaderView = .create(color: Theme.Color.Primary.background) // TODO: Change
     var viewError: RetryView = .create()
     var viewNoContent: NoContentView? = .create()
     
@@ -30,6 +30,6 @@ class LoadableDynamicViewController: UIViewController, LoadableProtocol {
         super.viewDidLoad()
         self.setupLoadableLayout()
         
-        self.viewMain.backgroundColor = UIColor.white // TODO: Change
+        self.viewMain.backgroundColor = Theme.Color.Primary.background
     }
 }
